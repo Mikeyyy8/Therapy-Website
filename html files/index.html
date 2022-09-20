@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sass/index.css">
+    <link rel="shortcut icon" href="../favicon.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/645ab696af.js" crossorigin="anonymous"></script>
+    <title>Sleep Hub</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="./index.html"><i class="fa-solid fa-cannabis"></i></a> Hub</div>
+            <div class="bars">
+                <a class="showMenu"><i onclick="showMenu()" class="fa-solid fa-bars"></i></a>
+            </div>
+            <div class="nav__links" id="nav__links">
+                <a href="#" class="link">Home</a>
+                <a href="#" class="link">About</a>
+                <a href="#contact" class="link">Contact</a>
+                <a href="./signup.html" class="link" id="button">Sign in</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <div class="hero">
+        <div class="container">
+            <div class="info">
+                <h1>Having Trouble Sleeping?</h1>
+                <h2>Sign up now</h2>
+                <p>To speak with a licensed Therapist.</p>
+                <button class="btn"><a href="./signup.html">Sign up</a></button>
+            </div>
+            <div class="right">
+                <img class="img" src="https://cdn.dribbble.com/users/1162077/screenshots/5414789/media/65f0bd2ded27af8416857e9d260c5e5a.gif" alt="grid"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contact" id="contact">
+            <div class="links">
+                <a href="https://wa.me/+2349070939863" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:gmichael.ikponwosa@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function showMenu(){
+        if(document.getElementsByClassName("nav__links")[0].style.display == "none"){
+        document.getElementsByClassName("nav__links")[0].style.display = "block";
+        }else{
+        document.getElementsByClassName("nav__links")[0].style.display ="none";
+        }
+        }
+    </script>
+</body>
+</html>
